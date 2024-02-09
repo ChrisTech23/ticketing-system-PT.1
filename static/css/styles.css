@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif; /* This sets the font family for the entire document */
+    margin: 0; /* This removes any default margin */
+    padding: 20px; /* This adds padding around the content */
+}
+
+form {
+    width: 50%; /* This sets the width of the form to 50% of its container */
+    margin: auto; /* This centers the form horizontally */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* This sets the width of text input fields and textareas to 100% */
+    padding: 10px; /* This adds padding inside the input fields and textareas */
+    margin-bottom: 10px; /* This adds margin at the bottom of input fields and textareas */
+    box-sizing: border-box; /* This includes padding and border in the element's total width and height */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* This sets the background color of the submit button */
+    color: white; /* This sets the text color of the submit button */
+    padding: 10px 20px; /* This adds padding inside the submit button */
+    border: none; /* This removes the border of the submit button */
+    cursor: pointer; /* This changes the cursor to a pointer when hovering over the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* This changes the background color of the submit button on hover */
+}

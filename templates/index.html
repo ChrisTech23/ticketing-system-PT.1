@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing System</title>
+    <!-- Link to the CSS stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Ticket Submission</h1>
+    <!-- Form for ticket submission -->
+    <form action="/" method="post">
+        <!-- Label and input field for ticket title -->
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        <!-- Label and textarea for ticket description -->
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" required></textarea><br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Flash messages (if any) -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
