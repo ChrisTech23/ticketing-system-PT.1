@@ -1,5 +1,7 @@
 # Ticketing System
 
+This is the beginning of this project version 2 will be uploaded soon.
+
 ## Overview
 Ticketing System is a simple web application built with Flask, a Python web framework, designed to allow users to submit tickets for various issues or requests. The application provides a user-friendly interface for submitting tickets, updating their status, and viewing existing tickets.
 
